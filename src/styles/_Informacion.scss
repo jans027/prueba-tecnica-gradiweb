@@ -1,7 +1,10 @@
 @use 'variables';
 
 
-
+.contenedorInformacion{
+    border: 1px solid red;
+    @include variables.estilosTarjetas;
+}
 
 
 
