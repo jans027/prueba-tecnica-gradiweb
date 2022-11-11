@@ -20,8 +20,16 @@ const Home = () => {
             {
                 items !== null ? (
                     <div className='contenedorPrincipal'>
-                        <h4>Catalog/Sneakers/{items.title}</h4>
-                        <img src={items.images[0]} alt="" />
+                        <div className='contenedorImagenes'>
+                            <h5>
+                                <span>Catalog / Sneakers / </span> {items.title}</h5>
+                            <img src={items.images[0]} alt="imagen1" />
+                            <div className='contenedorMiniaturas'>
+                                <img src={items.images[1]} alt="imagen2" />
+                                <img src={items.images[2]} alt="imagen2" />
+                                <img src={items.images[3]} alt="imagen2" />
+                            </div>
+                        </div>
                     </div>
                 ) : ('No datos')
             }
