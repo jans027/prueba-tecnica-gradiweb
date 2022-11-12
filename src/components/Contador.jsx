@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { productos } from "../functions/funciones";
+// import { productos } from "../functions/funciones";
 
 
 const Contador = () => {
 
-    const [items, setItems] = useState(null)
+    // const [items, setItems] = useState(null)
 
-    useEffect(() => {
-        productos(setItems)
-    }, [])
+    // useEffect(() => {
+    //     productos(setItems)
+    // }, [])
 
 
 

@@ -1,0 +1,90 @@
+@use 'variables';
+
+
+
+
+
+.contenedorColor{
+    display: flex;
+    align-items: center;
+    @include variables.estilosContenedores;
+    @media (max-width: 1160px) {
+        align-items: flex-start;
+    }
+    &:nth-child(2){
+        display: none;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        .buttons1{
+            display: flex;
+            justify-content: center;
+            margin: 0 .5em ;
+            width: 2.8em;
+            height: 2.8em;
+            font-size: .8em;
+            font-weight: 400;
+            border: 2px solid variables.$primario40;
+            border-radius: 50%;
+            @include variables.cursor;
+            @media (max-width: 1160px) {
+                margin: .5em;
+            }
+        }
+    }
+}
+    
+.contenedorTalla{
+    display: flex;
+    align-items: center;
+    @include variables.estilosContenedores;
+    @media (max-width: 1160px) {
+        align-items: flex-start;
+    }
+    &:nth-child(1){
+        display: none;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        .buttons1{
+            display: flex;
+            justify-content: center;
+            margin: 0 .5em ;
+            width: 2.8em;
+            height: 2.8em;
+            font-size: .8em;
+            font-weight: 400;
+            border: 2px solid variables.$primario40;
+            @include variables.cursor;
+            @media (max-width: 1160px) {
+                margin: .5em;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

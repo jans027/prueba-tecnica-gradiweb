@@ -36,34 +36,6 @@
             }
         }
     }
-    .contenedorColorTalla{
-        display: flex;
-        align-items: center;
-        @include variables.estilosContenedores;
-        @media (max-width: 1160px) {
-            align-items: flex-start;
-        }
-        div{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            
-            .buttons1{
-                display: flex;
-                justify-content: center;
-                margin: 0 .5em ;
-                width: 2.8em;
-                height: 2.8em;
-                font-size: .8em;
-                font-weight: 400;
-                border: 2px solid variables.$primario40;
-                @include variables.cursor;
-                @media (max-width: 1160px) {
-                    margin: .5em;
-                }
-            }
-        }
-    }
     .botonesCrud{
         display: flex;
         flex-wrap: wrap;

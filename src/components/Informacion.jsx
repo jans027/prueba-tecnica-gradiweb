@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { productos } from '../functions/funciones'
-import ColorTalla from './ColorTalla'
+import Color from './Color'
+import ColorTalla from './Color'
 import Contador from './Contador'
+import Talla from './Talla'
 
 const Informacion = () => {
 
@@ -30,22 +32,8 @@ const Informacion = () => {
                         </div>
 
                         <div>
-                            <ColorTalla/>
-                            {
-                                items.options.map((e) => (
-                                    <div className='contenedorColorTalla'>
-                                        <h6 key={e.name}> {e.name} </h6>
-                                        <div>
-                                            {
-                                                e.values.map((item) =>
-                                                    <div className='buttons1' key={item}> {item}</div>
-                                                )
-                                            }
-                                        </div>
-                                    </div>
-                                )
-                                )
-                            }
+                            <Color/>
+                            <Talla/>
                         </div>
 
                         <div>
