@@ -50,12 +50,12 @@ const Informacion = () => {
                             <p>suma</p>
                         </div>
 
-                        <div>
-                            <button>Add to favourite</button>
-                            <button>Add to card</button>
+                        <div className='botonesCrud'>
+                            <div>Add to favourite</div>
+                            <div>Add to card</div>
                         </div>
 
-                        <div>
+                        <div className='contenedorDescripcion'>
                             <p>{items.description}</p>
                         </div>
 
