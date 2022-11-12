@@ -44,6 +44,7 @@ $terciario20: #61bead20;
 
 @mixin cursor{
     cursor: pointer;
+    user-select: none;
     &:hover{
         transition:  100ms;
         transform: scale(1.05);

@@ -1,0 +1,41 @@
+@use 'variables';
+
+
+
+.contador{
+    // border: 1px solid red;
+    display: flex;
+    div{
+        border: 1px solid variables.$primario80;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        font-weight: 400;
+        @include variables.cursor;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

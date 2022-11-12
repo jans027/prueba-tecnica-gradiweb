@@ -82,6 +82,7 @@
   font-weight: 400;
   border: 2px solid rgba(32, 53, 58, 0.2509803922);
   cursor: pointer;
+  user-select: none;
 }
 .contenedorInformacion .contenedorColorTalla div .buttons1:hover {
   transition: 100ms;
@@ -102,7 +103,7 @@
   font-weight: 400;
 }
 .contenedorInformacion .botonesCrud div:nth-child(1) {
-  background-color: rgba(32, 53, 58, 0.1254901961);
+  background-color: rgba(32, 53, 58, 0.2509803922);
   color: #20353a;
 }
 .contenedorInformacion .botonesCrud div {
@@ -115,6 +116,7 @@
   background-color: #20353a;
   color: #ffffff;
   cursor: pointer;
+  user-select: none;
 }
 .contenedorInformacion .botonesCrud div:hover {
   transition: 100ms;
@@ -133,6 +135,8 @@
 .contenedorInformacion .contenedorDescripcion p {
   text-align: justify;
   font-size: 0.8em;
+  font-weight: 400;
+  color: rgba(32, 53, 58, 0.5019607843);
 }
 
 .contenedorImagenes {
@@ -193,6 +197,30 @@
 }
 .contenedorImagenes .contenedorMiniaturas img {
   width: 32%;
+}
+
+.contador {
+  display: flex;
+}
+.contador div {
+  border: 1px solid rgba(32, 53, 58, 0.5019607843);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+}
+.contador div:hover {
+  transition: 100ms;
+  transform: scale(1.05);
+}
+.contador div:active {
+  transition: 100ms;
+  transform: scale(1);
 }
 
 * {

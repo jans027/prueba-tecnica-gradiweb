@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { productos } from '../functions/funciones'
+import Contador from './Contador'
 
 const Informacion = () => {
 
@@ -46,8 +47,7 @@ const Informacion = () => {
                         </div>
 
                         <div>
-                            <p>contador</p>
-                            <p>suma</p>
+                            <Contador/>
                         </div>
 
                         <div className='botonesCrud'>
