@@ -42,7 +42,17 @@ $terciario20: #61bead20;
     padding: 1.3em 0;
 }
 
-
+@mixin cursor{
+    cursor: pointer;
+    &:hover{
+        transition:  100ms;
+        transform: scale(1.05);
+    }
+    &:active{
+        transition:  100ms;
+        transform: scale(1);
+    }
+}
 
 
 

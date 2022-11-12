@@ -32,6 +32,7 @@
             span{
                 margin-left: 1em;
                 color: variables.$primario80;
+                text-decoration: line-through;
             }
         }
     }
@@ -56,6 +57,7 @@
                 font-size: .8em;
                 font-weight: 400;
                 border: 2px solid variables.$primario40;
+                @include variables.cursor;
                 @media (max-width: 1160px) {
                     margin: .5em;
                 }
@@ -68,6 +70,7 @@
         font-weight: 400;
         div:nth-child(1){
             background-color: variables.$primario20;
+            color: variables.$primario;
         }
         div{
             width: 47%;
@@ -78,6 +81,7 @@
             justify-content: center;
             background-color: variables.$primario;
             color: variables.$basico;
+            @include variables.cursor;
             @media (max-width: 1170px) {
                 width: 100%;
                 margin: .5em 0;

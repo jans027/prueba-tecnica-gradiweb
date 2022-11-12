@@ -54,6 +54,7 @@
 .contenedorInformacion .ContenedorTitulo h3 span {
   margin-left: 1em;
   color: rgba(32, 53, 58, 0.5019607843);
+  text-decoration: line-through;
 }
 .contenedorInformacion .contenedorColorTalla {
   display: flex;
@@ -80,6 +81,15 @@
   font-size: 0.8em;
   font-weight: 400;
   border: 2px solid rgba(32, 53, 58, 0.2509803922);
+  cursor: pointer;
+}
+.contenedorInformacion .contenedorColorTalla div .buttons1:hover {
+  transition: 100ms;
+  transform: scale(1.05);
+}
+.contenedorInformacion .contenedorColorTalla div .buttons1:active {
+  transition: 100ms;
+  transform: scale(1);
 }
 @media (max-width: 1160px) {
   .contenedorInformacion .contenedorColorTalla div .buttons1 {
@@ -93,6 +103,7 @@
 }
 .contenedorInformacion .botonesCrud div:nth-child(1) {
   background-color: rgba(32, 53, 58, 0.1254901961);
+  color: #20353a;
 }
 .contenedorInformacion .botonesCrud div {
   width: 47%;
@@ -103,6 +114,15 @@
   justify-content: center;
   background-color: #20353a;
   color: #ffffff;
+  cursor: pointer;
+}
+.contenedorInformacion .botonesCrud div:hover {
+  transition: 100ms;
+  transform: scale(1.05);
+}
+.contenedorInformacion .botonesCrud div:active {
+  transition: 100ms;
+  transform: scale(1);
 }
 @media (max-width: 1170px) {
   .contenedorInformacion .botonesCrud div {
