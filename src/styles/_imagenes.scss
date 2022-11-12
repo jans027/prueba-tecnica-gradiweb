@@ -11,6 +11,10 @@
             color: variables.$primario80;
             font-size: .9em;
         }
+        @media (max-width: 1160px) {
+            display: none;
+        }
+        
     }
     .contenedorImgPrincipal{
         width: 100%;
@@ -23,11 +27,21 @@
             object-position: center center;
             object-fit: cover;
         }
+        @media (max-width: 600px) {
+            img{
+                height: 348px;
+                object-position: center center;
+                object-fit: cover;
+            }
+    }
     }
     .contenedorMiniaturas{
         width: 100%;
         display: flex;
         justify-content:space-between;
+        @media (max-width: 1160px) {
+            display: none;
+        }
         img{
             width: 32%;
         }
