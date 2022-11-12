@@ -19,7 +19,8 @@ const Imagenes = () => {
 
                     <div className='contenedorImagenes'>
                         <h5>
-                            <span>Catalog / Sneakers / </span> {items.title}</h5>
+                            <span>Catalog / Sneakers / </span> {items.title}
+                        </h5>
                         <div className='contenedorImgPrincipal'>
                             <img src={items.images[0]} alt="imagen1" />
                         </div>

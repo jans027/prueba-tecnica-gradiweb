@@ -2,8 +2,57 @@
 
 
 .contenedorInformacion{
-    border: 1px solid red;
     @include variables.estilosTarjetas;
+    .ContenedorTitulo{
+        @include variables.estilosContenedores;
+        margin-top: 1.8em;
+        h6{
+            font-size: .7em;
+            font-weight: 400;
+            color: variables.$primario80;
+            margin-bottom: .5em;
+        }
+        h1{
+            font-size: 2em;
+            margin-bottom: .3em;
+        }
+        h3{
+            font-size: 1.5em;
+            font-family: variables.$font-family2;
+            margin-bottom: .4em;
+            span{
+                margin-left: 1em;
+                color: variables.$primario80;
+            }
+        }
+    }
+    .contenedorColorTalla{
+        display: flex;
+        align-items: center;
+        @include variables.estilosContenedores;
+        @media (max-width: 1160px) {
+            align-items: flex-start;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            
+            .buttons1{
+                display: flex;
+                justify-content: center;
+                margin: 0 .5em ;
+                width: 2.8em;
+                height: 2.8em;
+                font-size: .8em;
+                font-weight: 400;
+                border: 2px solid variables.$primario40;
+                @media (max-width: 1160px) {
+                    margin: .5em;
+                }
+            }
+        }
+    }
 }
 
 
