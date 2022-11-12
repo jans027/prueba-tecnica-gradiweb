@@ -201,26 +201,43 @@
 
 .contador {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(32, 53, 58, 0.2509803922);
+  padding: 1.3em 0;
 }
-.contador div {
+.contador .botonesContador {
+  display: flex;
+}
+.contador .botonesContador div {
   border: 1px solid rgba(32, 53, 58, 0.5019607843);
-  width: 35px;
   height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1em;
   font-weight: 400;
+  width: 35px;
   cursor: pointer;
   user-select: none;
 }
-.contador div:hover {
+.contador .botonesContador div:hover {
   transition: 100ms;
   transform: scale(1.05);
 }
-.contador div:active {
+.contador .botonesContador div:active {
   transition: 100ms;
   transform: scale(1);
+}
+.contador .textoPrecio {
+  display: flex;
+  font-weight: 400;
+  color: rgba(32, 53, 58, 0.5019607843);
+}
+.contador .textoPrecio div:nth-child(2) {
+  font-weight: 400;
+  color: #20353a;
+  margin-left: 0.5em;
 }
 
 * {

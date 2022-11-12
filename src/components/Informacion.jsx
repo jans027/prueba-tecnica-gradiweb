@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { productos } from '../functions/funciones'
+import ColorTalla from './ColorTalla'
 import Contador from './Contador'
 
 const Informacion = () => {
@@ -29,6 +30,7 @@ const Informacion = () => {
                         </div>
 
                         <div>
+                            <ColorTalla/>
                             {
                                 items.options.map((e) => (
                                     <div className='contenedorColorTalla'>
