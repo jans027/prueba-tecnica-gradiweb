@@ -13,7 +13,7 @@ function Talla() {
 
     return (
         <div>
-            {
+            {/* {
                 element.map((e) => (
                     <div className="contenedorTalla">
                         <h6 key={e.name}> {e.name} </h6>
@@ -27,7 +27,7 @@ function Talla() {
                     </div>
                 )
                 )
-            }
+            } */}
         </div>
 
     );

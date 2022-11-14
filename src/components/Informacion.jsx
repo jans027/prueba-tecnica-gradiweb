@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { productos } from '../functions/funciones'
 import Color from './Color'
-import ColorTalla from './Color'
 import Contador from './Contador'
 import Talla from './Talla'
+import Spinner from 'react-bootstrap/Spinner';
 
 const Informacion = () => {
 
     const [items, setItems] = useState(null)
-
-    
-
 
     useEffect(() => {
         productos(setItems)
@@ -32,12 +29,12 @@ const Informacion = () => {
                         </div>
 
                         <div>
-                            <Color/>
-                            <Talla/>
+                            <Color />
+                            <Talla />
                         </div>
 
                         <div>
-                            <Contador/>
+                            <Contador />
                         </div>
 
                         <div className='botonesCrud'>
@@ -50,7 +47,11 @@ const Informacion = () => {
                         </div>
 
                     </div>
-                ) : ('No data')
+                ) : (
+                    <Spinner animation="border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </Spinner>
+                )
             }
         </>
     )

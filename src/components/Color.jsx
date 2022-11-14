@@ -1,20 +1,30 @@
-import React, { useEffect, useState } from "react";
-import { options } from "../functions/funciones";
+import React, { useEffect, useReducer, useState } from "react";
+import { options, productos } from "../functions/funciones";
 
 function Color() {
 
 
-    const [element, setElement] = useState(null)
+    // const [element, setElement] = useState(null)
 
+    // useEffect(() => {
+    //     options(setElement)
+    // }, [])
+
+    const [items, setItems] = useState(null)
 
     useEffect(() => {
-        options(setElement)
+        productos(setItems)
     }, [])
+
+
+
+
+    // console.log(items.options[0])
 
     return (
         <div>
-            {
-                element.map((e) => (
+            {/* {
+                items.map((e) => (
                     <div className="contenedorColor">
                         <h6 key={e.name}> {e.name} </h6>
                         <div>
@@ -27,7 +37,7 @@ function Color() {
                     </div>
                 )
                 )
-            }
+            } */}
         </div>
 
     );

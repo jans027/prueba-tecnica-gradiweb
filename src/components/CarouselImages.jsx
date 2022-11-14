@@ -11,11 +11,14 @@ const CarouselImages = () => {
         images(setImagenes)
     }, [])
 
+    // console.log(imagenes)
+
 
 
     return (
         <div className='contenedorCarousel'>
             <Carousel slide={false}>
+                
                 <Carousel.Item>
                     <img
                         className="d-block w-200"
