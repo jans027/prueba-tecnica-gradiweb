@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { images, productos } from '../functions/funciones'
+import { images } from '../functions/funciones'
+import CarouselImages from './CarouselImages'
 
 const Imagenes = () => {
 
     const [imagenes, setImagenes] = useState(null)
-    // const [items, setItems] = useState(null)
 
 
     useEffect(() => {
         images(setImagenes)
-        // productos(setItems)
     }, [])
 
     // console.log(imagenes)
 
     return (
         <>
+        <CarouselImages />
             {
                 imagenes !== null ? (
 

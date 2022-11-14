@@ -111,6 +111,11 @@
     width: 100%;
   }
 }
+@media (max-width: 1160px) {
+  .contenedorImagenes {
+    display: none;
+  }
+}
 .contenedorImagenes h5 {
   color: #20353a;
   padding: 0.8em 0;
@@ -119,11 +124,6 @@
 .contenedorImagenes h5 span {
   color: rgba(32, 53, 58, 0.5019607843);
   font-size: 0.9em;
-}
-@media (max-width: 1160px) {
-  .contenedorImagenes h5 {
-    display: none;
-  }
 }
 .contenedorImagenes .contenedorImgPrincipal {
   width: 100%;
@@ -197,10 +197,6 @@
   font-weight: 400;
   color: #20353a;
   margin-left: 0.5em;
-}
-
-.contenedorCarousel {
-  border: 1px solid red;
 }
 
 .contenedorColor {
@@ -292,6 +288,23 @@
   .contenedorTalla div .buttons1 {
     margin: 0.5em;
   }
+}
+
+.contenedorCarousel {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .contenedorCarousel {
+    width: 100%;
+  }
+}
+@media (min-width: 1160px) {
+  .contenedorCarousel {
+    display: none;
+  }
+}
+.contenedorCarousel img {
+  width: 100%;
 }
 
 * {

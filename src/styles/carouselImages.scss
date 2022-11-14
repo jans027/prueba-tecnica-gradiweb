@@ -1,0 +1,56 @@
+@use 'variables';
+
+
+
+
+
+.contenedorCarousel{
+    width: 50%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    @media (min-width: 1160px) {
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+    // .carousel{
+    //     .carousel-inner{
+    //         .item{
+    //         }
+    //         .carousel-control-next{
+    //         }
+    //         .carousel-indicators{
+    //         }
+    //     }
+    // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
