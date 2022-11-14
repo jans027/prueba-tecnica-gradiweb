@@ -10,11 +10,11 @@ function Color() {
     //     options(setElement)
     // }, [])
 
-    const [items, setItems] = useState(null)
+    // const [items, setItems] = useState(null)
 
-    useEffect(() => {
-        productos(setItems)
-    }, [])
+    // useEffect(() => {
+    //     productos(setItems)
+    // }, [])
 
 
 

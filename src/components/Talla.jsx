@@ -4,12 +4,12 @@ import { options } from "../functions/funciones";
 function Talla() {
 
 
-    const [element, setElement] = useState(null)
+    // const [element, setElement] = useState(null)
 
 
-    useEffect(() => {
-        options(setElement)
-    }, [])
+    // useEffect(() => {
+    //     options(setElement)
+    // }, [])
 
     return (
         <div>

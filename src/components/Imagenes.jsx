@@ -1,40 +1,86 @@
 import React, { useEffect, useState } from 'react'
 import { images } from '../functions/funciones'
-import CarouselImages from './CarouselImages'
+import Carousel from 'react-bootstrap/Carousel';
+import { productos } from "../functions/funciones";
+
+
 
 const Imagenes = () => {
 
-    const [imagenes, setImagenes] = useState(null)
+    // const [imagenes, setImagenes] = useState(null)
 
 
-    useEffect(() => {
-        images(setImagenes)
-    }, [])
+    // useEffect(() => {
+    //     images(setImagenes)
+    // }, [])
+    // const { images } = useParams();
+
+    // const productos = items
 
     // console.log(imagenes)
 
+    // const [items, setItems] = useState(null)
+
+    // useEffect(() => {
+    //     productos(setItems)
+    // }, [])
+
+    // console.log(items)
+
     return (
         <>
-        <CarouselImages />
-            {
-                imagenes !== null ? (
+            {/* <div className='contenedorCarousel'>
+                <Carousel slide={false}>
+
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-200"
+                            src={items.images[0]}
+                            alt="imagen1"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-200"
+                            src={items.images[0]}
+                            alt="Simagen2"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-200"
+                            src={items.images[0]}
+                            alt="imagen3"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-200"
+                            src={items.images[0]}
+                            alt="imagen4"
+                        />
+                    </Carousel.Item>
+                </Carousel>
+            </div> */}
+            {/* {
+                items !== null ? (
 
                     <div className='contenedorImagenes'>
                         <h5>
-                            {/* <span>Catalog / Sneakers / </span> {items.title} */}
+                            <span>Catalog / Sneakers / </span> {items.title}
                         </h5>
                         <div className='contenedorImgPrincipal'>
-                            <img src={imagenes[0]} alt="imagen1" />
+                            <img src={items.images[0]} alt="imagen1" />
                         </div>
                         <div className='contenedorMiniaturas'>
-                            <img src={imagenes[2]} alt="imagen2" />
-                            <img src={imagenes[3]} alt="imagen2" />
-                            <img src={imagenes[1]} alt="imagen2" />
+                            <img src={items.images[0]} alt="imagen2" />
+                            <img src={items.images[0]} alt="imagen3" />
+                            <img src={items.images[0]} alt="imagen4" />
                         </div>
                     </div>
 
                 ) : ('No datos')
-            }
+            } */}
         </>
     )
 }

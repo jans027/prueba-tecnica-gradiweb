@@ -3,7 +3,6 @@ import { productos } from '../functions/funciones'
 import Color from './Color'
 import Contador from './Contador'
 import Talla from './Talla'
-import Spinner from 'react-bootstrap/Spinner';
 
 const Informacion = () => {
 
@@ -14,45 +13,39 @@ const Informacion = () => {
     }, [])
 
 
+
     return (
         <>
-            {
-                items !== null ? (
-                    <div className='contenedorInformacion'>
-                        <div className='ContenedorTitulo'>
-                            <h6>by Nike x ALIX</h6>
-                            <h1>{items.title}</h1>
-                            <h3>
-                                $ {items.price_min}
-                                <span> $ {items.compare_at_price_max}</span>
-                            </h3>
-                        </div>
+            <div className='contenedorInformacion'>
+                <div className='ContenedorTitulo'>
+                    <h6>by Nike x ALIX</h6>
+                    <h1>{items.title}</h1>
+                    <h3>
+                        $ {items.price_min}
+                        <span> $ {items.compare_at_price_max}</span>
+                    </h3>
+                </div>
 
-                        <div>
-                            <Color />
-                            <Talla />
-                        </div>
+                <div>
+                    <Color />
+                    <Talla />
+                </div>
 
-                        <div>
-                            <Contador />
-                        </div>
+                <div>
+                    <Contador />
+                </div>
 
-                        <div className='botonesCrud'>
-                            <div>Add to favourite</div>
-                            <div>Add to card</div>
-                        </div>
+                <div className='botonesCrud'>
+                    <div>Add to favourite</div>
+                    <div>Add to card</div>
+                </div>
 
-                        <div className='contenedorDescripcion'>
-                            <p>{items.description}</p>
-                        </div>
+                <div className='contenedorDescripcion'>
+                    <p>{items.description}</p>
+                </div>
 
-                    </div>
-                ) : (
-                    <Spinner animation="border" role="status">
-                        <span className="visually-hidden">Loading...</span>
-                    </Spinner>
-                )
-            }
+            </div>
+            
         </>
     )
 }
