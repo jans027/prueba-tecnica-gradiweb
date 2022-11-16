@@ -71,6 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-## Sass
-
-npm run sass:watch
+### para desplegar en entorno local:
+descarge el proyecto desde el repositorio , abralo en Visual estudio code , abra una terminal y en ella escriba ( npm start ).
